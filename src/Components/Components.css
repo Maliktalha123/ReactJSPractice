@@ -1,0 +1,26 @@
+/* _____ Use State ___ */
+.useState {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+.buttons button {
+  padding: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  background: #000;
+  color: aliceblue;
+  border: 1px solid;
+  border-radius: 5px;
+}
+button:hover {
+  color: rgb(225, 188, 140);
+  background: #201f1f;
+}
+
+/* ______ USe EFFect ______ */
