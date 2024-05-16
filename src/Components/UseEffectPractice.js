@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
-import UseStatePractice from "./UseStatePractice";
 
-/* Note : 1 : It will re render so the Elements will be re render  
-   2 : It will not used in DOM  */
+/* Note : 1 : It will re render so the Elements will be re rende 2 : It will not used in DOM  */ ;
 
 function UseEffectPractice() {
   const [color, setColor] = useState(0);
   let number = 0;
-// There are three types of useEffect 
+  // There are three types of useEffect
 
   //_________ 1 : It will run on every render
   useEffect(() => {

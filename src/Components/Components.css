@@ -24,3 +24,18 @@ button:hover {
 }
 
 /* ______ USe EFFect ______ */
+/* ___________Cards ________ */
+
+.card {
+  max-width: 23vw;
+  border: 2px solid;
+}
+.container {
+  max-width: 100dvw;
+border: 6px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  /* flex-direction: row !important; */ 
+}
