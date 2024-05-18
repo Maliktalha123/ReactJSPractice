@@ -1,28 +1,34 @@
 import React, { useEffect, useState } from "react";
-import './Components.css'
-const Excercise1 = () => {
+
+function Excercise1() {
   const [cards, setCards] = useState([]);
-  const fetching = async () => {
-    let linkOfApi = await fetch("https://jsonplaceholder.typicode.com/posts");
-    let data = await linkOfApi.json()
-    setCards(data);
-    console.log(data)
+
+  const operating = async () => {
+    let ApiIsHere = await fetch("https://jsonplaceholder.typicode.com/posts");
+    let inJsonFormat = await ApiIsHere.json();
+    setCards(inJsonFormat);
   };
+
   useEffect(() => {
-    fetching();
+    operating();
   }, []);
 
-  return(  <div className="container">
-    {
-      cards.map((card)=>{
-       return(  <div key={card.id} className="card">
-<h1 style={{fontSize :"26px"}}>{card.title}</h1>
-<p>{card.body}</p>
-<p>USer ID : {card.userId}</p>
-        </div>)
-      })
-    }
-  </div>);
-};
+  return (
+    <>
+      <h1 className="cardsHeading">Cards Is Here</h1>
+      <div className="container">
+        {cards.map((prop) => {
+          return (
+            <div key={prop.id} className="card">
+              <h1 style={{ fontSize: "30px" }}>{prop.title}</h1>
+              <p>{prop.body}</p>
+              <h3 style={{ fontSize: "22px" }}>{prop.userId}</h3>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+}
 
 export default Excercise1;

@@ -1,5 +1,4 @@
 import "./App.css";
-
 import UseStatePractice from "./Components/UseStatePractice";
 import UseEffectPractice from "./Components/UseEffectPractice";
 import Excercise1 from "./Components/Excercise1";
@@ -8,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Excercise1 />
-      
+
       {/* 
 
 <UseStatePractice />

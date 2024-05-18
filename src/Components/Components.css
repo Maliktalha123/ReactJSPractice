@@ -24,6 +24,7 @@ button:hover {
 }
 
 /* ______ USe EFFect ______ */
+
 /* ___________Cards ________ */
 
 .card {
@@ -32,10 +33,16 @@ button:hover {
 }
 .container {
   max-width: 100dvw;
-border: 6px solid red;
+/* border: 6px solid red; */
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
   /* flex-direction: row !important; */ 
+}
+.cardsHeading{
+  background: #504545;
+  font-size: 30px;
+  color: aliceblue;
+  padding: 10px;
 }
